@@ -1,0 +1,57 @@
+.trending-section {
+    padding: 2rem;
+    background-color: #141414;
+    color: #fff;
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: crimson;
+    }
+  
+    .trending-grid {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+  
+      &::-webkit-scrollbar {
+        height: 6px;
+        display: none;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 3px;
+      }
+    }
+  
+    .trending-card {
+      flex: 0 0 auto;
+      width: 180px;
+      scroll-snap-align: start;
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.07);
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+      }
+  
+      p {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.95rem;
+        color: darkorange;
+      }
+    }
+  }
+  

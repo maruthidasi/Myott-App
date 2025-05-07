@@ -1,0 +1,96 @@
+.video-container {
+    position: relative;
+    max-width: 1024px;
+    background: #000;
+    margin: 0 auto;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .brightness-control {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .brightness-slider {
+    transform: rotate(270deg);
+    margin-top: -90px;
+    width: 50px;
+  }
+  
+  .control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .control-buttons button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .play-pause-button {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .left-button {
+    position: absolute;
+    left: 15px;
+    margin-bottom: 600px;
+  }
+  
+  .right-button {
+    position: absolute;
+    right: 15px;
+    margin-bottom: 600px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    cursor: pointer;
+  }
+  
+  .volume-control,
+  .brightness-control input {
+    width: 100px;
+  }
+  
+  select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mute-button,
+  .fullscreen-button {
+    margin-left: 10px;
+    
+  }
+  
+  
+  

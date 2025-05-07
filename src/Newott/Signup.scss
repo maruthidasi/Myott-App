@@ -1,0 +1,163 @@
+// .signup-page {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+//     background: url('/') no-repeat center center/cover;
+//     background-color: #000;
+//     color: #fff;
+//     padding: 40px;
+//     text-align: center;
+//   }
+  
+//   .signup-page form {
+//     background-color: rgba(0, 0, 0, 0.75);
+//     padding: 50px 40px;
+//     border-radius: 10px;
+//     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+//     max-width: 500px;
+//     width: 100%;
+//   }
+  
+//   .signup-page form h2 {
+//     font-size: 32px;
+//     margin-bottom: 20px;
+//   }
+  
+//   .signup-page form p {
+//     font-size: 18px;
+//     margin-bottom: 20px;
+//   }
+  
+//   .signup-page form input {
+//     width: 100%;
+//     padding: 14px;
+//     margin-bottom: 16px;
+//     border: none;
+//     border-radius: 5px;
+//     background-color: #333;
+//     color: #fff;
+//     font-size: 16px;
+//   }
+  
+//   .signup-page form input::placeholder {
+//     color: #bbb;
+//   }
+  
+//   .signup-page form button {
+//     width: 100%;
+//     padding: 14px;
+//     font-size: 18px;
+//     font-weight: bold;
+//     background-color: #e50914;
+//     border: none;
+//     border-radius: 5px;
+//     color: white;
+//     cursor: pointer;
+//     transition: background 0.3s;
+//   }
+  
+//   .signup-page form button:hover {
+//     background-color: #f40612;
+//   }
+  
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/') no-repeat center center/cover;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  
+    form {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 50px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      max-width: 500px;
+      width: 100%;
+  
+      h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+  
+        &::placeholder {
+          color: #bbb;
+        }
+      }
+  
+      button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #e50914;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background-color: #f40612;
+        }
+      }
+  
+      .signup-footer {
+        margin-top: 20px;
+  
+        .create-account-link {
+          color: #e50914;
+          cursor: pointer;
+          text-decoration: underline;
+  
+          &:hover {
+            color: #f40612;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e50914;
+  }
+//   /* Ensure Toastify styles are applied correctly */
+// .Toastify__toast--error {
+//   background-color: #f44336 !important;
+//   color: white;
+// }
+
+// .Toastify__toast--success {
+//   background-color: #e7efe8 !important;
+//   color: rgb(18, 237, 135);
+// }
+
+// /* Optional: Customize Toastify container position */
+// .Toastify__toast-container {
+//   top: 20px;
+//   right: 20px;
+// }
+
+  

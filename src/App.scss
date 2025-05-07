@@ -1,0 +1,216 @@
+// 
+/* Global Reset and Font Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #332929;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+/* Navbar Logo Styling */
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e50914;
+}
+
+/* Navbar Links Styling */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #e50914;
+}
+
+/* Right section of the Navbar (Profile Dropdown and Buttons) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Button Styling */
+.navbar-btn,
+.navbar-btn1 {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-btn:hover,
+.navbar-btn1:hover {
+    background-color: #bf0811;
+}
+
+/* Profile Dropdown Styling */
+.profile-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+}
+
+/* Mobile, Tablet, and Laptop Responsive Layout */
+@media (max-width: 1024px) {
+    /* For laptops and larger tablets */
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar-links {
+        gap: 1rem;
+    }
+
+    .navbar-right {
+        gap: 0.75rem;
+    }
+
+    .navbar-btn,
+    .navbar-btn1 {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-logo {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .navbar-links li a {
+        font-size: 1rem;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .navbar-btn,
+    .navbar-btn1 {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        right: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.4rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-links li a {
+        font-size: 0.9rem;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar-btn,
+    .navbar-btn1 {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        top: 3rem;
+    }
+}

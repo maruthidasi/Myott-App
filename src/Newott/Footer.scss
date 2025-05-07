@@ -1,0 +1,116 @@
+.footer {
+  background-color: #0d0d0d;
+  color: #ccc;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.95rem;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    .footer-section {
+      flex: 1;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        color: #fff;
+        margin-bottom: 0.8rem;
+      }
+
+      a {
+        color: #ccc;
+        text-decoration: none;
+        margin-bottom: 0.4rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+        }
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .back-to-top {
+    text-align: center;
+    color: #aaa;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+    font-size: 26px;
+
+    &:hover {
+      color: #f30c0c;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #222;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.newsletter {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      padding: 0.8rem;
+      width: 100%;
+      max-width: 400px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #e50914;
+      }
+    }
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: center;
+
+      input {
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

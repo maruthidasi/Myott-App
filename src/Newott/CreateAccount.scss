@@ -1,0 +1,61 @@
+.create-account-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+
+  form {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+    width: 100%;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+
+      &::placeholder {
+        color: #bbb;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #e50914;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #f40612;
+      }
+    }
+  }
+}
+h1{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e50914;
+}

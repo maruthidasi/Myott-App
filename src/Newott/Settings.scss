@@ -1,0 +1,59 @@
+.settings-page {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1919;
+    color: #e02020;
+    transition: all 0.3s ease;
+  }
+  
+  .settings-page.dark {
+    background-color: #1c1c1c;
+    color: #d42121;
+  }
+  
+  .settings-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #f83939;
+    border-radius: 8px;
+    background-color: rgb(32, 26, 26);
+  }
+  
+  .settings-page.dark .settings-section {
+    background-color: #2c2c2c;
+    border-color: #e1e4dc;
+  }
+  
+  .settings-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .settings-section input[type="password"] {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+  }
+  
+  .settings-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .settings-btn:hover {
+    background-color: #b20710;
+  }
+  
+  .settings-page.dark .settings-btn {
+    background-color: #ff4747;
+  }
+  
